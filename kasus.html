@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detektif Conan: Kasus Ikonik</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="fixed inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwsSOGBh1v8vrPgsjiEWDJtBjnFzsjAXvXYsulTiJ-r4den7jsPSxvExLsBGScTdEh6c8sgbBzrrrcxGVw7iZSflIxgh4l6T-jIwL0YFSOjFT6s9nbZ12lcc_wLRu8N1W6awO1ki2CNxIeKbHqkR93uBQk4wp9joxg9cgvVlf7ixRjzfsDhyBfkaHx1D-RDlR7aN3uK4kQ1_NEenxlg7JAezpCaeP1rNuGOZApMSxiWblWKxqQ4kkhkzdjBGB5EwEyufYn2icZOIQ'); filter: blur(12px);"></div>
+<div class="relative z-10 flex h-full grow flex-col">
+<div class="flex flex-1 justify-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5">
+<div class="flex w-full max-w-[960px] flex-1 flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 bg-black/20 backdrop-blur-md rounded-xl px-6 py-3 sticky top-5 z-20">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Detektif Conan: Kasus Ikonik</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Beranda</a>
+<a class="text-white text-sm font-bold leading-normal border-b-2 border-primary pb-1" href="#">Daftar Kasus</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Karakter</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-white/60 flex border-none bg-white/10 items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-white/10 focus:border-none h-full placeholder:text-white/60 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Cari kasus..." value=""/>
+</div>
+</label>
+</div>
+</header>
+<main class="mt-12">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Jelajahi Kasus-Kasus Paling Berkesan</p>
+<p class="text-white/70 text-base font-normal leading-normal">Telusuri daftar kasus ikonik dari serial Detektif Conan, dari pembunuhan di ruang terkunci hingga konfrontasi dengan Organisasi Hitam.</p>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 p-3 overflow-x-auto">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-md px-3 border border-white/10 hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">sort</span>
+<p class="text-white text-sm font-medium leading-normal">Urutkan: Paling Populer</p>
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-md px-3 border border-white/10 hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">filter_list</span>
+<p class="text-white text-sm font-medium leading-normal">Organisasi Hitam</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-md px-3 border border-white/10 hover:bg-white/20 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Kasus Heiji Hattori</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary px-3 hover:bg-primary/90 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Kasus Kaito Kid</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-md px-3 border border-white/10 hover:bg-white/20 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Semua Kasus</p>
+</button>
+</div>
+<!-- ImageGrid with Glassmorphism -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 p-4">
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="A grand piano in a dark, mysterious room with moonlight shining through a window." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_IceHdE9HxhKjUHbObeH1ENXt6cELSPUeDUT7V97IP-6Qg9dizfAbI4sgRJSW0_MHHgdcRwfEYFGEQf9Q7LDd6zN7rkHccjtVrudXiZ_0UEuGxHgCfcPM03gED7ihE0kKSW6iEAQB0V-3BTegET-oU4WdZyw0-v_ckIz80qjmtcEh1xd_Wy0BDtOEss-TlCEAjTlXos8PmwahTnx-QUvgPtTlB96PXTVlKlDXX2v07VpkjdT7E0qeDTArg6s7bafQXJFg6MZrXgo');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-red-600/80 px-2 py-1 rounded">Pembunuhan</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Kasus Pembunuhan Piano Sonata 'Moonlight'</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Episode 11-12</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Sebuah kasus tragis diwarnai melodi misterius di pulau terpencil, mengungkap masa lalu yang kelam.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="Siluet seorang pria berjas hitam dalam kegelapan, melambangkan Organisasi Hitam." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcNBYM4YAxaDVNs3Ho7WS2AI4qiADrFDTdVVIEdgDrB9qr5Jj3WlDxnwsUBigQp8mDDAiwF5imjmqAd2jEhmFVxZ0YK-5S-QLM_vLKTinxsrchR5t231SjnSXqx3sLHS2uONmWumHMNFEtXNkRTjAK0NHPTDCg9oObK6hYVQbKLDEMDTZfLyZ8Hxlo_675QUO1ZysgRDhOqbkFhOP-N9ePWbE_OQbEQsc6DKAAcNV-AoFXfgn7HrXq3JAxBTFb7YE60oZNEF5DKqw');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-black/80 px-2 py-1 rounded">Organisasi Hitam</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Reuni dengan Organisasi Hitam</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Episode 176-178</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Conan dan Haibara berhadapan langsung dengan Gin dan Vodka dalam situasi yang menegangkan.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="Pemandangan kota Tokyo yang diselimuti salju, menciptakan suasana dingin dan terisolasi." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtlFJWltf2wBU7ENt-OcRXFbSxr9DCc1SU--g925_cywcCZHKZgC0yWYyFUtZtrDKR0m-hsRBK-V0Wge5h-jxcXaHnBQB1ArzNEaqwZuzOQtRybmvXPuWuTnw0gmWGFXbtGZKL-_LdRwFwDzJLniLxaHczgqvozXA-iDSVLU_ePL3bKKVhAhQQ36TVDm3OmcK1xqizLAORDWAtrMlCIvStoWutHEn3baixprF3_fN6qNUUDx8fQeKx8GdBO16VgNklCgf8OAPHCv0');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-blue-600/80 px-2 py-1 rounded">Heiji Hattori</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Pembunuhan di Vila Gunung Tottori</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Episode 34-35</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Misteri ruang terkunci di tengah badai salju mempertemukan Conan dengan detektif Heiji Hattori.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="Kartu remi melayang di udara dengan latar belakang bulan purnama, simbol Kaito Kid." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCImeNOqRtQJXrIQscNrj5VW9BRWsEQ5ZGg9MpP1tTgPiRfMuGtY5R6XA8hN1mu9ZKBapuoFRPldJLeFTkklC5QU1PmG321jVuAQqQxE924q6D2IailbDxH2OUwNzlp1veYgnoGKZQ9yQBPgk8BpBc0cobocpysf1kUlCU8UqfuHCCimlCIUlOhOdTptFyJXkkfNQjMYnEtuIVI3PrCvJQdj-C2-FODIV05ZelprU2sIjOyOMuUB8R0CnYkTDBt3de0uZ7owThovn0');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-purple-600/80 px-2 py-1 rounded">Kaito Kid</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Konfrontasi dengan Kaito Kid</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Episode 76</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Pertarungan akal pertama antara Conan Edogawa dan sang pencuri bayangan, Kaito Kid.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="Interior sebuah perpustakaan tua yang megah dan sedikit menyeramkan." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIW3sJTE_NThFCx1vSK9cWacsWqyELvcU_88SSzjIFhosLHVIcbQg-YpZir0mWFj-S1o1Qe-JPbrzO_S4CA5aM0jgKKQtxvo3WmXMmEC5MzlyhvDG4mfF9JtiHVnH7NC2pbrZJPQHYU5opTmVTkaVVOAyExgdkpF1vuPY1IPz20G7gV9mIJBf7y_Rz0WrPDrDYbSVYaGihD4hZTozQiO4sipPaOos6XhCpqgT5XLs9u1ca9FwY4FwrtYEUpjlh5REvq2BP6tF5P9o');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-red-600/80 px-2 py-1 rounded">Pembunuhan</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Kasus Pembunuhan di Perpustakaan</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Episode 50</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Detektif Cilik terjebak di perpustakaan dengan mayat tersembunyi dan pelaku yang masih berkeliaran.</p>
+</div>
+</div>
+<div class="group flex cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-black/20 p-3 backdrop-blur-lg transition-all duration-300 hover:border-white/30 hover:bg-black/30 hover:-translate-y-1">
+<div class="bg-cover bg-center flex w-full flex-col gap-3 rounded-lg justify-end aspect-[3/4]" data-alt="Sebuah jam hitung mundur digital berwarna merah, menandakan bahaya bom." style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOOO86b-BsnI5Ak7TxaOof8AgxzEEJvFVKdg5hWvmrjSRzuYjN8DMP0EXBqCFySyVZmUTL_jP0YtoBkqOXKAtwR_SUOdoad4v-_p97slkofjda-3CNONCnbbrjK7neE2gK5RvUhBk7TEF4XbTegYhpR-qPEYeKCIH3Oje6PVgV3fFVkpFjeWQCSHUx7YEqKI22XhXSfdQKQ2kVGeIecUE_Vq2AhcqPc5-Eao04gJDhzGc7r_PZ4P3K-UJ-GAQrYPvBg40HA0Ub5do');">
+<div class="p-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-white bg-orange-600/80 px-2 py-1 rounded">Bom</span>
+</div>
+</div>
+<div class="flex flex-col px-1">
+<h3 class="text-white text-base font-bold leading-tight">Kasus Pengeboman Berantai Ibu Kota</h3>
+<p class="text-xs font-medium text-white/70 mt-1">Movie 1: The Time-Bombed Skyscraper</p>
+<p class="text-sm text-white/80 mt-2 line-clamp-2">Conan harus menghentikan teroris yang memasang bom di seluruh kota, mempertaruhkan nyawa Ran.</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center p-4 mt-8">
+<a class="flex size-10 items-center justify-center text-white/60 hover:text-white" href="#">
+<span class="material-symbols-outlined" style="font-size: 22px;">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal flex size-10 items-center justify-center text-white rounded-full bg-primary" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded-full hover:bg-white/10" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded-full hover:bg-white/10" href="#">3</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded-full hover:bg-white/10" href="#">4</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded-full">...</span>
+<a class="flex size-10 items-center justify-center text-white/60 hover:text-white" href="#">
+<span class="material-symbols-outlined" style="font-size: 22px;">chevron_right</span>
+</a>
+</div>
+</main>
+<footer class="mt-16 border-t border-white/10 py-6 text-center text-sm text-white/50">
+<p>© 2024 Detektif Conan: Kasus Ikonik. Dibuat oleh penggemar untuk penggemar.</p>
+<p class="mt-1">Detektif Conan adalah milik Gosho Aoyama / Shogakukan. Situs ini tidak berafiliasi.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
